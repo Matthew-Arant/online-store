@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6add4fdc6e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+        <div class="box">
+            <div class="header">
+                <i class="header-member fa-sharp fa-solid fa-cart-shopping fa-2xl" id="shopping-cart" onclick="goToCart()"></i>
+                <div class="header-member" id="title" onclick="goToHome()">
+                    Market & Sons
+                </div>
+                <i class="header-member fa-solid fa-user fa-2xl" id="login" onclick="goToLogin()"></i>
+            </div>
+            <nav class="navbar">
+                <div class="nav-item" onclick="goToHome()">
+                    Home
+                </div>
+                <div class="nav-item" id="nav-market" onclick="goToMarket()">
+                    Market
+                </div>
+                <div class="nav-item" onclick="goToLogin()">
+                    Login
+                </div>
+            </nav>
+            <div class="main">
+                <div class="mat-card" id="market" onclick="goToMarket()">
+                    <p id="main-text">The Fruit Market</p>
+                </div>
+            </div>
+            <div class="footer">
+                <p id="footer-text">Footer</p>
+            </div>
+        </div>
+    </main>
+	<script src="./js/index.js"></script>
+  </body>
+</html>
